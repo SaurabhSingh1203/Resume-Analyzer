@@ -28,6 +28,8 @@ movies=pd.DataFrame(movies_dict)
 
 similarity=pickle.load(open('similarity.pkl','rb'))
 
+
+
 selected_movie_name=st.selectbox('How would',movies['title'].values)
 
 if st.button('Recommend'):
